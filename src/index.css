@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: highlighted;
+    src: url(./assets/Mazius-Extraitalic.121a71a7.otf);
+
+}
+
+@font-face {
+    font-family: primary;
+    src: url(./assets/Gilroy-SemiBold.f3ed44cd.ttf);
+}
+
+@font-face {
+    font-family: secondary;
+    src: url(./assets/Gilroy-Medium.e7e7c091.ttf);
+}
