@@ -11,9 +11,8 @@ function App() {
       <main className='min-h-[42vh]'>
           <Outlet/>
       </main>
-      
     </>
-  )
+  );
 }
 
-export default App
+export default App;
