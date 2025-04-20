@@ -1,90 +1,27 @@
-import React from 'react';
-import carImg from "../assets/carHome.png";
-import bikeImg from "../assets/bikeHome.png";
-import roadImg from "../assets/roadImg.png";
 import Search from '../components/Search';
-import Working from '../components/Working'
-import Marquee from 'react-fast-marquee';
-import { FaStar } from "react-icons/fa";
+import Working from '../components/Home/Working'
+import Testimonial from "../components/Home/Testimonial"
+import FaqList from '../components/Home/Faq/FaqList';
+import Blog from '../components/Home/Blog';
+import FeaturedCars from '../components/Home/FeaturedCars';
 
-import img1 from "../assets/brezza-exterior-right-front-three-quarter-9.webp"
-import img2 from "../assets/creta-exterior-right-front-three-quarter-5.webp"
-import img3 from "../assets/curvv-exterior-right-front-three-quarter-15.webp"
-import img4 from "../assets/dzire-exterior-right-front-three-quarter-27.webp"
-import img5 from "../assets/hyryder-exterior-right-front-three-quarter-73.webp"
-import img6 from "../assets/thar-roxx-exterior-right-front-three-quarter-25.webp"
-import img7 from "../assets/syros-exterior-right-front-three-quarter.webp"
-import img8 from "../assets/scorpio-n-exterior-right-front-three-quarter-76.webp"
-import img9 from "../assets/punch-exterior-right-front-three-quarter-57.webp"
-import FaqList from '../components/Faq/FaqList';
-import deliver from "../assets/deliver.webp"
+import carImg from "../assets/images/carHome.png";
+import bikeImg from "../assets/images/bikeHome.png";
+import roadImg from "../assets/images/roadImg.png";
+import imgRent from "../assets/images/RentYourCar.png"
+import deliver from "../assets/images/deliver.webp"
 
-const data = [
-  {
-    img : img1,
-    name : "Vitara Brezza",
-    owner : "Prakash",
-    rating : 4.8
-  },
-  {
-    img : img2,
-    name : "Creta",
-    owner : "Prakash",
-    rating : 4.8
-  },
-  {
-    img : img3,
-    name: "Curvv" ,
-    owner : "Prakash",
-    rating : 4.8
-  },
-  {
-    img : img4,
-    name : "Swift Dzire",
-    owner : "Prakash",
-    rating : 4.8
-  },
-  {
-    img : img5,
-    name : "hyryder",
-    owner : "Prakash",
-    rating : 4.8
-  },
-  {
-    img : img6,
-    name : "Mahindra Thar",
-    owner : "Prakash",
-    rating : 4.8
-  },
-  {
-    img : img7,
-    name : "KIA",
-    owner : "Prakash",
-    rating : 4.8
-  },
-  {
-    img : img8,
-    name : "Scorpio-N",
-    owner : "Prakash",
-    rating : 4.8
-  },
-  {
-    img : img9,
-    name : "Punch",
-    owner : "Prakash",
-    rating : 4.8
-  }
-  
-]
 
 function Home() {
+
+  
   return (
     <>
       {/* Landing Section : Contains Welcome Text , images and a search bar */}
-      <section className='bg-[#eeeff1] h-screen relative'>
+      <section className='bg-[#eeeff1] h-screen w-full relative'>
         {/* Text Content (Positioned at the top) */}
         <div className='absolute top-[15vh] left-0 w-full h-1/2 flex flex-col justify-center items-center text-center'>
-          <h1 className='text-4xl font-[primary] text-gray-800 mb-4'>Drive Your Dream  <span className='font-[highlighted] text-6xl'>car/bike</span>  Today</h1>
+          <h1 className='text-4xl font-[primary] text-gray-800 mb-4'>Drive Your Dream  <span className='font-[highlighted] text-6xl text-[#034367]'>car/bike</span>  Today</h1>
           {["Rent the perfect car for any trip with RentXpress." , "Enjoy flexible options, great prices, and a hassle-free experience." , " Get started in a few clicks!"].map((text , index) => 
             <p key={index} className='text-lg text-gray-800 font-[secondary]'>{text}</p>
           )}
@@ -103,7 +40,7 @@ function Home() {
           <img
             src={roadImg}
             alt=""
-            className='w-full h-full object-scale-down opacity-30' // Adjust opacity as needed
+            className='w-full h-full object-scale-down opacity-20' // Adjust opacity as needed
             style={{ transform: 'rotate(20deg)' }} // Removed rotation for background
           />
         </div>
@@ -180,25 +117,7 @@ function Home() {
       {/* */}
       <section>
         <div className='text-center font-[primary] text-[32px]'>Select From Our Featured Cars</div>
-        <Marquee speed={50} >
-        <div className='flex gap-4 py-12'>
-        {data.map((car , index) =>
-          (<div key={index}>
-            <div className='flex flex-col rounded-lg shadow shadow-2xl p-2'>
-              <img src={car.img} alt="" />
-              <div className='flex justify-between font-semibold'>
-                <h1>{car.name}</h1>
-                <div className='flex gap-2 items-center'>
-                  <FaStar size={20} color='#ffd700'/>
-                  <h1>{car.rating}</h1>
-                </div>
-              </div>
-              <p>Owner : {car.owner}</p>
-            </div>
-          </div>)
-        )}
-        </div>
-        </Marquee>
+        <FeaturedCars />
       </section>
 
       <section>
@@ -214,6 +133,30 @@ function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      <div>
+            <h1 className='heading text-[16px] lg:text-[30px] text-center mt-6'> What Other Sellers Say About QuickBuy ... </h1>
+            <Testimonial/>
+      </div>
+
+      <section className='px-12 py-8'>
+        <h1 className='text-center text-[32px]'>Travel Blog for Our Travellers</h1>
+        <div className='py-12 mb-12'>
+          <Blog />
+        </div>
+        
+      </section>
+
+      <section className='py-4 mt-12 mx-16 h-[300px] rounded-lg  bg-gradient-to-bl from-[#034367] via-[#0b0a0f] to-[#034367]'>
+        <div className='p-8 flex flex-col'>
+          <h1 className='text-white font-bold text-[30px]'>Become a Host</h1>
+        </div>
+        <div className='flex justify-end'>
+          <img src={imgRent} alt="" className='h-[300px] object-scale-down'/>
+        </div>
+        
+        
       </section>
 
 
