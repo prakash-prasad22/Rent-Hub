@@ -4,6 +4,8 @@ import Testimonial from "../components/Home/Testimonial"
 import FaqList from '../components/Home/Faq/FaqList';
 import Blog from '../components/Home/Blog';
 import FeaturedCars from '../components/Home/FeaturedCars';
+import { gsap } from "gsap";
+import { useRef , useEffect } from "react"
 
 import carImg from "../assets/images/carHome.png";
 import bikeImg from "../assets/images/bikeHome.png";
@@ -12,7 +14,37 @@ import imgRent from "../assets/images/RentYourCar.png"
 import deliver from "../assets/images/deliver.webp"
 
 
+
 function Home() {
+
+
+  // Refs for the text section and the image container
+  const textRef = useRef(null);
+  const imageRef1 = useRef(null);
+  const imageRef2 = useRef(null);
+
+  useEffect(() => {
+    // GSAP animations
+    gsap.fromTo(
+      textRef.current,
+      { scale: 0.3},
+      { scale:1, duration: 1.5, ease: "expo.out" }
+    );
+
+    gsap.fromTo(
+      imageRef1.current,
+      { x: "100%", opacity: 0 },
+      { x: "0%", opacity: 1, duration: 1.5, ease: "power2.out", delay: 0.5 }
+    );
+
+    gsap.fromTo(
+      imageRef2.current,
+      { x: "-100%", opacity: 0 },
+      { x: "0%", opacity: 1, duration: 1.5, ease: "power2.out", delay: 0.5 }
+    );
+  }, []);
+
+  
 
   
   return (
@@ -20,7 +52,7 @@ function Home() {
       {/* Landing Section : Contains Welcome Text , images and a search bar */}
       <section className='bg-[#eeeff1] h-screen w-full relative'>
         {/* Text Content (Positioned at the top) */}
-        <div className='absolute top-[15vh] left-0 w-full h-1/2 flex flex-col justify-center items-center text-center'>
+        <div className='absolute top-[15vh] left-0 w-full h-1/2 flex flex-col justify-center items-center text-center' ref={textRef}>
           <h1 className='text-4xl font-[primary] text-gray-800 mb-4'>Drive Your Dream  <span className='font-[highlighted] text-6xl text-[#034367]'>car/bike</span>  Today</h1>
           {["Rent the perfect car for any trip with RentXpress." , "Enjoy flexible options, great prices, and a hassle-free experience." , " Get started in a few clicks!"].map((text , index) => 
             <p key={index} className='text-lg text-gray-800 font-[secondary]'>{text}</p>
@@ -30,9 +62,9 @@ function Home() {
         </div>
 
         {/* Image Container (Positioned at the bottom) */}
-        <div className='absolute bottom-0 left-0 w-full flex justify-center items-end'>
-          <img src={bikeImg} alt="Bike" className='z-[10] w-[45vw] object-contain' />
-          <img src={carImg} alt="Car" className='w-[55vw] object-contain' />
+        <div className='absolute bottom-0 left-0 w-full flex justify-center items-end' >
+          <img src={bikeImg} alt="Bike" className='z-[10] w-[45vw] object-contain' ref={imageRef2}/>
+          <img src={carImg} alt="Car" className='w-[55vw] object-contain' ref={imageRef1}/>
         </div>
 
         {/* Road Image as Background */}
