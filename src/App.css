@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.step{
+    @apply w-[100px] h-[100px]  flex items-center justify-center border border-4 border-white rounded-lg shadow-sm hover:shadow-gray-600 hover:shadow-2xl
+}
