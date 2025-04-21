@@ -106,38 +106,37 @@ function Home() {
         <div className="flex flex-col p-8 gap-1 mt-8 md:mt-20">
                   <div className="flex flex-col md:flex-row gap-4 md:gap-1">
                     <div className="w-full md:w-1/2 text-white pr-4 -mt-12 -pl-8">
-                      <p className="font-[primary] text-black text-[4vw] md:text-[3vh] leading-[3vh]">Fueled by a <span className="font-[highlighted] text-[#28534f] text-[6vw] md:text-[5vh]">passion</span> for crafting seamless digital experiences , 
-                      I&apos;ve embarked on a journey to build innovative and impactful solutions and it has been a <span className="font-[highlighted] text-[#28534f] text-[6vw] md:text-[4vh]">continuous process of learning and growth.</span></p>
-                      <p className="hidden md:block text-[2vh] mt-20 font-[secondary] text-white">Discovering the Possibilities ...</p>
-                      <p className="hidden md:block text-[2vh] font-[secondary] text-white">Eager to contribute my skills and enthusiasm to a team that values innovation, continuous learning, and a collaborative spirit.😊</p>
-                      <p className="hidden md:block text-[2vh] mb-20 font-[secondary] text-white">Driven to learn more from experienced and grow through mentorships.</p>
+                      <p className="font-[primary] text-black text-[4vw] md:text-[3vh] leading-[3vh]"> <span className="font-[highlighted] text-[#28534f] text-[6vw] md:text-[5vh]"></span> <span className="font-[highlighted] text-[#28534f] text-[6vw] md:text-[4vh]"></span></p>
+                      <p className="hidden md:block text-[2vh] mt-20 font-[secondary] text-white"></p>
+                      <p className="hidden md:block text-[2vh] font-[secondary] text-white"></p>
+                      <p className="hidden md:block text-[2vh] mb-20 font-[secondary] text-white"></p>
                     </div>
         
                     <div className="w-full md:w-1/2 bg-gradient-to-b from-[#034367] via-[#0b0a0f] to-[#034367] p-[1.5rem]">
-                      <h1 className="text-white font-[primary] text-[4vh]">MERN-Stack</h1>
+                      <h1 className="text-white font-[primary] text-[4vh]"></h1>
                       <img src="" alt="" className="" />
-                      <p className="text-[2vh] text-white font-[secondary] mt-4 mb-4 md:hidden">I have successfully deployed 3-4 MERN-Based website and continuouslly working on more projects to hone my development skills.</p>
-                      <p className="hidden md:block text-[2vh] text-white font-[secondary] mt-8 ">Web development is a constant pursuit of improvement. My ⭐MERN stack projects, including functional applications like QuickBuy and a doctor appointment system, alongside creative portfolio websites, serve as my ongoing training ground. </p>
-                      <p className="hidden md:block text-[2vh] text-white font-[secondary]  mb-8">This hands-on approach allows me to refine back-end logic and craft engaging front-end experiences, pushing the boundaries of what I can build.</p>
+                      <p className="text-[2vh] text-white font-[secondary] mt-4 mb-4 md:hidden"></p>
+                      <p className="hidden md:block text-[2vh] text-white font-[secondary] mt-8 "></p>
+                      <p className="hidden md:block text-[2vh] text-white font-[secondary]  mb-8"></p>
                     </div>
                   </div>
         
                   <div className="flex flex-col md:flex-row gap-1">
                   <div className="w-full md:w-1/2 bg-gradient-to-r from-[#034367] via-[#0b0a0f] to-[#034367] p-[1.5rem]">
-                      <h1 className="hidden md:block text-white font-[primary] text-[4vh]">DSA</h1>
+                      <h1 className="hidden md:block text-white font-[primary] text-[4vh]"></h1>
                       <img src="" alt="" className="w-full h-[15vh] object-scale-down" />
-                      <p className="text-[2vh] text-white font-[secondary] mt-4 mb-4 md:hidden">I have solved over 600 DSA problems across platforms like LeetCode, GeeksforGeeks and cultivated a structured approach to algorithmic thinking.</p>
-                      <p className="hidden md:block text-[2vh] text-white font-[secondary] mt-8">Sharpening problem-solving abilities is a daily endeavor. </p>
-                      <p className="hidden md:block text-[2vh] text-white font-[secondary]">With over 600 DSA problems solved across platforms like LeetCode and GeeksforGeeks, I've cultivated a structured approach to algorithmic thinking.</p>
-                      <p className="hidden md:block text-[2vh] text-white font-[secondary] mb-8">This dedication to practice translates to efficient and logical solutions, enhancing my ability to tackle complex technical challenges.</p>
+                      <p className="text-[2vh] text-white font-[secondary] mt-4 mb-4 md:hidden"></p>
+                      <p className="hidden md:block text-[2vh] text-white font-[secondary] mt-8"> </p>
+                      <p className="hidden md:block text-[2vh] text-white font-[secondary]"></p>
+                      <p className="hidden md:block text-[2vh] text-white font-[secondary] mb-8"></p>
                     </div>
         
                     <div className="w-full md:w-1/2 bg-gradient-to-br from-[#034367] via-[#0b0a0f] to-[#034367] p-[1.5rem]">
-                      <h1 className="hidden md:block text-white font-[primary] text-[4vh]">Native-Android</h1>
+                      <h1 className="hidden md:block text-white font-[primary] text-[4vh]"></h1>
                       <img src="" alt="" className="w-full h-[15vh] object-scale-down" />
-                      <p className="text-[2vh] text-white font-[secondary] mt-4 mb-4 md:hidden">I have also delve into native Android development with Kotlin, where I've gained valuable insights into mobile app development.</p>
-                      <p className="hidden md:block text-[2vh] text-white font-[secondary] mt-8">While I've gained some experience with the MERN stack and DSA, I'm a firm believer in continuous exploration. My journey has led me to delve into native Android development with Kotlin, where I've gained valuable insights into mobile app development. </p>
-                      <p className="hidden md:block text-[2vh] text-white font-[secondary] mt-2 mb-8"> I'm also actively exploring cutting-edge technologies like Next.js . These explorations, are essential steps in broadening my technical horizon and staying adaptable in a dynamic field.</p>
+                      <p className="text-[2vh] text-white font-[secondary] mt-4 mb-4 md:hidden"></p>
+                      <p className="hidden md:block text-[2vh] text-white font-[secondary] mt-8"></p>
+                      <p className="hidden md:block text-[2vh] text-white font-[secondary] mt-2 mb-8"> </p>
                     </div>
                   </div>
                   </div>

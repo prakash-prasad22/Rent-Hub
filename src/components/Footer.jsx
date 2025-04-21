@@ -43,8 +43,8 @@ const quickLinks01 = [
 
 const quickLinks02 = [
   {
-    path : '/find-a-doctor',
-    display :'Find a Doctor'
+    path : '/find-a-vehicle',
+    display :'Find a Vehicle'
   },
   {
     path : '/',
@@ -63,7 +63,7 @@ const quickLinks02 = [
 const quickLinks03 = [
   {
     path : '/',
-    display :'Donate'
+    display :'Rent '
   },
   {
     path : '/contact',
