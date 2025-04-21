@@ -167,7 +167,7 @@ function Home() {
       </section>
 
       <div>
-            <h1 className='heading text-[16px] lg:text-[30px] text-center mt-6'> What Other Sellers Say About QuickBuy ... </h1>
+            <h1 className='heading text-[16px] lg:text-[30px] text-center mt-6'> What Other Customers Say About RentHub ... </h1>
             <Testimonial/>
       </div>
 
